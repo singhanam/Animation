@@ -1,0 +1,110 @@
+
+body{
+    display:flexbox;
+    background-color: rgb(24, 24, 23);
+    align-items: center;
+    justify-items: center;
+}
+.circle1{
+    position: absolute;
+    align-items: center;
+    box-sizing: border-box;
+    border-style:solid;
+    box-shadow: 10px 10px 10px 1px rgb(197, 197, 236);
+    border-color: rgb(110, 42, 2);
+    border-width: 0.5rem;
+    width: 10rem;
+    height: 10rem;
+    border-radius: 10rem;
+    margin-left: 40%;
+    margin-top: 15%;
+}
+
+.circle2{
+    position: absolute;
+    align-items: center;
+    box-sizing: border-box;
+    border-style:solid;
+    box-shadow: 5px 5px 20px 1px rgb(197, 197, 236);
+    border-color: rgb(105, 104, 180);
+    border-width: 0.5rem;
+    width: 10rem;
+    height: 10rem;
+    border-radius: 10rem;
+    margin-left: 43%;
+    margin-top: 20%;
+}
+
+.circle3{
+    position: absolute;
+    align-items: center;
+    box-sizing: border-box;
+    border-style:solid;
+    box-shadow: 5px 5px 20px 1px rgb(197, 197, 236);
+    border-color: rgb(149, 229, 168);
+    border-width: 0.5rem;
+    width: 10rem;
+    height: 10rem;
+    border-radius: 10rem;
+    margin-left: 46%;
+    margin-top: 15%;
+}
+
+@keyframes slideLeft{
+    from{
+transform:translateX(-300px)
+    }
+
+    to{
+        transform:translateX(0)
+    }
+}
+
+@keyframes rotate{
+    from{
+transform:rotate(0);
+    }
+
+    to{
+        transform:rotate(360deg);
+    }
+}
+
+.heading{
+    animation-name: slideLeft;
+    animation-timing-function:ease-in ;
+    animation-duration:03s ;
+    animation-delay: 0s;
+    animation-fill-mode:forwards;
+    animation-iteration-count:6 ;
+    animation-direction:forwards;
+
+transform: translateX(-150px)   ;
+    
+}
+
+.rotate{
+   animation:rotate 2s linear infinite;
+}
+
+.rotate1{
+    animation-name: rotate;
+    animation-timing-function:linear;
+    animation-duration:03s ;
+    animation-delay: 0s;
+    animation-fill-mode:none;
+    animation-iteration-count:6 ;
+    animation-direction:reverse;
+transform-origin:top;
+}
+
+.rotate2{
+    animation-name: rotate;
+    animation-timing-function:linear;
+    animation-duration:03s ;
+    animation-delay: 0s;
+    animation-fill-mode:none;
+    animation-iteration-count:6 ;
+    animation-direction:reverse;
+transform-origin:-30px;
+}
